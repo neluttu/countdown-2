@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .flip {
+        animation: flip 0.6s ease-in-out forwards;
+      }
+      
+      @keyframes flip {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-100%);
+          opacity: 0.5;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+}
